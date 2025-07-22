@@ -286,7 +286,7 @@ const ResetPassword = () => {
                 <div className="card-body pt-5">
                   <a className="text-center">
                     <h4>
-                      <img src="/images/Primevertex--Logo-light.png" alt="" />
+                      <img src="/images/logo-big.png" alt="" />
                     </h4>
                   </a>
                   <form className="mt-5 mb-5 login-input" onSubmit={handleSubmit}>

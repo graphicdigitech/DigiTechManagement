@@ -168,7 +168,7 @@ const Login = () => {
                       {/* <h4>Prime Vertex</h4> */}
                       <h4>
                         <img
-                          src="/images/Primevertex--Logo-light.png"
+                          src="/images/logo-big.png"
                           alt=""
                         />
                       </h4>

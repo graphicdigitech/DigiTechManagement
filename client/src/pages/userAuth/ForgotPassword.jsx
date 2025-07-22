@@ -266,7 +266,7 @@ const ForgotPassword = () => {
                                 <div className="card-body pt-5">
                                     <div className="text-center">
                                         <h4>
-                                            <img src="/images/Primevertex-Logo-01-dark.png" 
+                                            <img src="/images/logo-big.png" 
                                                 width="270px" 
                                                 alt="Company Logo" />
                                         </h4>
