@@ -49,7 +49,7 @@ const ShowDeletedEmployee = () => {
   useEffect(() => {
     const fetchDeletedEmployees = async () => {
       try {
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/employee/deletedemployee/d`);
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}api/employee/deletedemployee/d`);
         setDeletedEmployeeData(res.data);
         setFilteredData(res.data); // Initialize filtered data with all deleted employees
       } catch (error) {
@@ -129,7 +129,7 @@ const ShowDeletedEmployee = () => {
       if (result.isConfirmed) {
         try {
           const response = await axios.post(
-            `${process.env.REACT_APP_API_URL}/api/employee/deletedemployee/restoreemployee/${employeeid}`
+            `${process.env.REACT_APP_API_URL}api/employee/deletedemployee/restoreemployee/${employeeid}`
           );
           setDeletedEmployeeData(
             deletedEmployeeData.filter(
@@ -165,7 +165,7 @@ const ShowDeletedEmployee = () => {
       if (result.isConfirmed) {
         try {
           const response = await axios.delete(
-            `${process.env.REACT_APP_API_URL}/api/employee/deletedemployee/delete/${employeeid}`
+            `${process.env.REACT_APP_API_URL}api/employee/deletedemployee/delete/${employeeid}`
           );
           setDeletedEmployeeData(
             deletedEmployeeData.filter(

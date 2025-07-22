@@ -90,7 +90,7 @@ const RequestLeave = () => {
     };
 
     try {
-      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/leave`, formData);
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}api/leave`, formData);
       showSuccessAlert(response.data.msg);
       setTimeout(() => {
         navigate("/employee/leave-history");

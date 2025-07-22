@@ -52,7 +52,7 @@ const HolidayCalender = () => {
   useEffect(() => {
     const fetchHolidayData = async () => {
       try {
-        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/holiday`);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}api/holiday`);
         setHolidayData(response.data);
         setFilteredRecords(response.data); // initially, show all records
       } catch (error) {
@@ -117,7 +117,7 @@ const HolidayCalender = () => {
       if (result.isConfirmed) {
         try {
           const response = await axios.delete(
-            `${process.env.REACT_APP_API_URL}/api/holiday/${holidayDeleteId}`
+            `${process.env.REACT_APP_API_URL}api/holiday/${holidayDeleteId}`
           );
           Swal.fire("Deleted!", response.data.msg, "success");
           setFilteredRecords((PrevData) =>

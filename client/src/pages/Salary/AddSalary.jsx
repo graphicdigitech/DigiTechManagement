@@ -222,7 +222,7 @@
 // // //     };
 // // //     // console.log(formData)
 // // //     try {
-// // //       const res = await axios.post("${process.env.REACT_APP_API_URL}/api/salary", formData);
+// // //       const res = await axios.post("${process.env.REACT_APP_API_URL}api/salary", formData);
 // // //       showSuccessAlert(res.data.msg);
 // // //       setTimeout(() => {
 // // //         navigate("/showSalaries");
@@ -838,7 +838,7 @@
 // //     const fetchAttendanceReport = async () => {
 // //       try {
 // //         if (!id) return;
-// //         const response = await axios.get('${process.env.REACT_APP_API_URL}/api/attendance/report/' + id + '/' + month);
+// //         const response = await axios.get('${process.env.REACT_APP_API_URL}api/attendance/report/' + id + '/' + month);
 // //         console.log(response.data);
 // //         setAttendanceReport(response.data);
 // //         setemployeeName(response.data?.employee?.employeeName);
@@ -944,7 +944,7 @@
 // //     };
 
 // //     try {
-// //       const res = await axios.post("${process.env.REACT_APP_API_URL}/api/salary", formData);
+// //       const res = await axios.post("${process.env.REACT_APP_API_URL}api/salary", formData);
 // //       showSuccessAlert(res.data.msg);
 // //       setTimeout(() => {
 // //         navigate("/showSalaries");

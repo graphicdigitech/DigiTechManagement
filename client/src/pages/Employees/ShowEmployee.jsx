@@ -71,7 +71,7 @@ const ShowEmployee = () => {
   useEffect(() => {
     const fetchEmployees = async () => {
       try {
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/employee`);
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}api/employee`);
         setEmployeeData(res.data);
         setFilteredData(res.data); // Initialize filtered data with all employees
       } catch (error) {
@@ -148,7 +148,7 @@ const ShowEmployee = () => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          const response = await axios.delete(`${process.env.REACT_APP_API_URL}/api/employee/${employeeid}`);
+          const response = await axios.delete(`${process.env.REACT_APP_API_URL}api/employee/${employeeid}`);
           setEmployeeData(
             employeeData.filter((employee) => employee._id !== employeeid)
           );

@@ -66,7 +66,7 @@ const UpdateHoliday = () => {
     useEffect(() => {
         const fetchHoliday = async () => {
             try {
-                const responce = await axios.get(`${process.env.REACT_APP_API_URL}/api/holiday/${id}`);
+                const responce = await axios.get(`${process.env.REACT_APP_API_URL}api/holiday/${id}`);
                 setHolidayData(responce.data);
                 setname(responce.data.name)
                 setdate(responce.data.date.split('T')[0])
@@ -102,7 +102,7 @@ const UpdateHoliday = () => {
                 date,
                 description,
             }
-            const response = await axios.put(`${process.env.REACT_APP_API_URL}/api/holiday/${id}`, formData);
+            const response = await axios.put(`${process.env.REACT_APP_API_URL}api/holiday/${id}`, formData);
             showSuccessAlert(response.data.msg);
             console.log(response)
             setTimeout(() => {

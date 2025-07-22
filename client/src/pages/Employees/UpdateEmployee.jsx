@@ -70,7 +70,7 @@ const UpdateEmployee = () => {
   useEffect(() => {
     const fetchEmployee = async () => {
       try {
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/employee/${id}`);
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}api/employee/${id}`);
         setEmployeeName(res.data.employeeName);
         setEmployeeEmail(res.data.employeeEmail);
         setEmployeeSalary(res.data.employeeSalary);
@@ -91,7 +91,7 @@ const UpdateEmployee = () => {
   useEffect(() => {
     const fetchRoles = async () => {
       try {
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/role/active/R`);
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}api/role/active/R`);
         setRoleData(res.data);
       } catch (error) {
         console.error("Error Fetching Roles", error);
@@ -185,7 +185,7 @@ const UpdateEmployee = () => {
     };
 
     try {
-      const res = await axios.put(`${process.env.REACT_APP_API_URL}/api/employee/${id}`, formData);
+      const res = await axios.put(`${process.env.REACT_APP_API_URL}api/employee/${id}`, formData);
       showSuccessAlert(res.data.msg);
       setTimeout(() => {
         navigate("/showemployee");
