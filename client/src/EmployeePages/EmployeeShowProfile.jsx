@@ -84,7 +84,7 @@ const EmployeeShowProfile = () => {
     if (Id) {
       const fetchEmployee = async () => {
         try {
-          const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/employee/${Id}`);
+          const res = await axios.get(`${process.env.REACT_APP_API_URL}api/employee/${Id}`);
           setEmployeeData(res.data); // Set the employee data from API response
         } catch (error) {
           console.error("Error Fetching Employee Data", error);

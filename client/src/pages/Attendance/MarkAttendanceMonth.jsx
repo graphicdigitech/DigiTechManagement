@@ -48,7 +48,7 @@
 //   useEffect(() => {
 //     const fetchEmployees = async () => {
 //       try {
-//         const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/employee`);
+//         const res = await axios.get(`${process.env.REACT_APP_API_URL}api/employee`);
 //         setEmployeeData(res.data);
 //         setFilteredData(res.data);
 //       } catch (error) {
@@ -126,7 +126,7 @@
 
 //     try {
 //       const response = await axios.post(
-//         `${process.env.REACT_APP_API_URL}/api/attendance/${employeeId}/${month}`
+//         `${process.env.REACT_APP_API_URL}api/attendance/${employeeId}/${month}`
 //       );
 //       Swal.fire("Success", response.data.msg, "success");
 //     } catch (error) {
@@ -142,7 +142,7 @@
 //   const handleSubmit = async (e) => {
 //     e.preventDefault();
 //     try {
-//       const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/markAbsences/:id/:month`);
+//       const response = await axios.post(`${process.env.REACT_APP_API_URL}api/markAbsences/:id/:month`);
 //       Swal.fire("Success", response.data.msg, "success");
 //     } catch (error) {
 //       Swal.fire("Error", error.response.data.err, "error");
@@ -437,7 +437,7 @@ const MarkAttendanceMonth = () => {
   useEffect(() => {
     const fetchEmployees = async () => {
       try {
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/employee`);
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}api/employee`);
         setEmployeeData(res.data);
         setFilteredData(res.data);
       } catch (error) {
@@ -515,7 +515,7 @@ const MarkAttendanceMonth = () => {
     }
 
     try {
-      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/markAbsences/${employeeId}/${month}`);
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}api/markAbsences/${employeeId}/${month}`);
       Swal.fire("Success", response.data.msg, "success");
       // Clear the selected date after successful marking
       setSelectedDates((prev) => ({

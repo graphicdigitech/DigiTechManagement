@@ -92,7 +92,7 @@ const Home = () => {
     useEffect(() => {
         const fetchRole = async () => {
             try {
-                const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/role`);
+                const res = await axios.get(`${process.env.REACT_APP_API_URL}api/role`);
                 setRoleData(res.data);
             } catch (error) {
                 console.error("Error Fetching Roles Data:", error);
@@ -105,7 +105,7 @@ const Home = () => {
     useEffect(() => {
         const fetchExpanceCategory = async () => {
             try {
-                const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/expance/category/`);
+                const res = await axios.get(`${process.env.REACT_APP_API_URL}api/expance/category/`);
                 setExpanceCategoryData(res.data);
             } catch (error) {
                 console.log("Error Fetching Expance Category Data", error);
@@ -118,7 +118,7 @@ const Home = () => {
     useEffect(() => {
         const fetchExpance = async () => {
             try {
-                const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/expance/`);
+                const res = await axios.get(`${process.env.REACT_APP_API_URL}api/expance/`);
                 setGExpanceData(res.data);
             } catch (error) {
                 console.log("Error Fetching Expance Category Data", error);
@@ -131,7 +131,7 @@ const Home = () => {
     useEffect(() => {
         const fetchEmployees = async () => {
             try {
-                const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/employee`);
+                const res = await axios.get(`${process.env.REACT_APP_API_URL}api/employee`);
                 setEmployeeData(res.data)
             } catch (error) {
                 console.log("Error Fetching Employees Data", error)
@@ -149,7 +149,7 @@ const Home = () => {
                 if (table1StartDate) params.startingDate = table1StartDate;
                 if (table1EndDate) params.endingDate = table1EndDate;
     
-                const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/expance/tb1/t`, { params });
+                const res = await axios.get(`${process.env.REACT_APP_API_URL}api/expance/tb1/t`, { params });
                 setTb1ExpanceData(res.data);
             } catch (error) {
                 console.error("Error Fetching Table 1 Data", error);
@@ -168,7 +168,7 @@ const Home = () => {
                 if (table2StartDate) params.startingDate = table2StartDate;
                 if (table2EndDate) params.endingDate = table2EndDate;
     
-                const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/expance/tb2/t`, {
+                const res = await axios.get(`${process.env.REACT_APP_API_URL}api/expance/tb2/t`, {
                     // params: { startingDate: table2StartDate, endingDate: table2EndDate },
                     params,
                 });
@@ -205,7 +205,7 @@ const Home = () => {
     useEffect(() => {
         const fetchExpanceForChart = async () => {
             try {
-                const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/expance`, {
+                const res = await axios.get(`${process.env.REACT_APP_API_URL}api/expance`, {
                     params: { startingDate: chartStartDate, endingDate: chartEndDate },
                 });
                 setExpanceData(res.data);

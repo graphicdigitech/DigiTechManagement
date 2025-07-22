@@ -59,7 +59,7 @@ const ShowSalary = () => {
     const fetchSalary = async () => {
       setLoading(true);
       try {
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/salary/${id}`);
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}api/salary/${id}`);
         setSalaryData(res.data);
         setFilteredData(res.data); // Set both for immediate render
       } catch (error) {

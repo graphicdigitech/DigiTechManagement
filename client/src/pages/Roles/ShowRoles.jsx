@@ -49,7 +49,7 @@ const ShowRoles = () => {
   useEffect(() => {
     const fetchRole = async () => {
       try {
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/role`);
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}api/role`);
         setRoleData(res.data);
         setFilteredData(res.data); // Initialize filtered data with all roles
       } catch (error) {
@@ -95,7 +95,7 @@ const ShowRoles = () => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          const response = await axios.delete(`${process.env.REACT_APP_API_URL}/api/role/${roleid}`);
+          const response = await axios.delete(`${process.env.REACT_APP_API_URL}api/role/${roleid}`);
           setRoleData(RoleData.filter((role) => role._id !== roleid)); // Update RoleData
           Swal.fire("Deleted!", response.data.msg, "success");
         } catch (error) {

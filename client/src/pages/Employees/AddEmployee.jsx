@@ -64,7 +64,7 @@
 // //   useEffect(() => {
 // //     const fetchRoles = async () => {
 // //       try {
-// //         const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/role/active/R`);
+// //         const res = await axios.get(`${process.env.REACT_APP_API_URL}api/role/active/R`);
 // //         setEmployeeRoleData(res.data);
 // //       } catch (error) {
 // //         console.error("Error fetching roles:", error);
@@ -181,7 +181,7 @@
 // //     console.log("TIme In client", employeeTimeIn);
 // //     console.log("TIme Out client", employeeTimeOut);
 // //     try {
-// //       const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/employee`, formData);
+// //       const response = await axios.post(`${process.env.REACT_APP_API_URL}api/employee`, formData);
 // //       showSuccessAlert(response.data.msg);
 // //       setTimeout(() => {
 // //         navigate("/showemployee");
@@ -411,7 +411,7 @@
 //   useEffect(() => {
 //     const fetchRoles = async () => {
 //       try {
-//         const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/role/active/R`);
+//         const res = await axios.get(`${process.env.REACT_APP_API_URL}api/role/active/R`);
 //         setEmployeeRoleData(res.data);
 //         const employeeRole = res.data.find((r) => r.roleName.toLowerCase() === "employee");
 //         if (employeeRole) setEmployeeRoleId(employeeRole._id);
@@ -477,7 +477,7 @@
 //     };
 
 //     try {
-//       const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/employee`, formData);
+//       const response = await axios.post(`${process.env.REACT_APP_API_URL}api/employee`, formData);
 //       showSuccessAlert(response.data.msg);
 //       setTimeout(() => navigate("/showemployee"), 2000);
 //     } catch (error) {
@@ -635,7 +635,7 @@ const AddEmployee = () => {
   useEffect(() => {
     const fetchRoles = async () => {
       try {
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/role/active/R`);
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}api/role/active/R`);
         setEmployeeRoleData(res.data);
       } catch (error) {
         console.error("Error fetching roles:", error);
@@ -722,7 +722,7 @@ const AddEmployee = () => {
     };
 
     try {
-      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/employee`, formData);
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}api/employee`, formData);
       showSuccessAlert(response.data.msg);
       setTimeout(() => navigate("/showemployee"), 2000);
     } catch (error) {

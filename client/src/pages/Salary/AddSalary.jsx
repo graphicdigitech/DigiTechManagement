@@ -94,7 +94,7 @@
 // // //       try {
 // // //         if (!id) return;
 // // //         const response = await axios.get(
-// // //           `${process.env.REACT_APP_API_URL}/api/attendance/report/${id}/${month}`
+// // //           `${process.env.REACT_APP_API_URL}api/attendance/report/${id}/${month}`
 // // //         );
 // // //         console.log(response.data);
 // // //         setAttendanceReport(response?.data);
@@ -1302,7 +1302,7 @@
 //     const fetchAttendanceReport = async () => {
 //       try {
 //         if (!id) return;
-//         const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/attendance/report/${id}/${month}`);
+//         const response = await axios.get(`${process.env.REACT_APP_API_URL}api/attendance/report/${id}/${month}`);
 //         console.log(response.data);
 //         setAttendanceReport(response.data);
 //         setEmployeeName(response.data?.employee?.employeeName || '');
@@ -1410,7 +1410,7 @@
 //     };
 
 //     try {
-//       const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/salary`, formData);
+//       const res = await axios.post(`${process.env.REACT_APP_API_URL}api/salary`, formData);
 //       showSuccessAlert(res.data.msg);
 //       setTimeout(() => {
 //         navigate("/showSalaries");
@@ -1857,7 +1857,7 @@ const AddSalary = () => {
           showErrorAlert("Employee ID is required.");
           return;
         }
-        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/attendance/report/${id}/${month}`);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}api/attendance/report/${id}/${month}`);
         console.log(response.data);
         setAttendanceReport(response.data);
         setEmployeeName(response.data?.employee?.employeeName || '');
@@ -1979,7 +1979,7 @@ const AddSalary = () => {
     };
 
     try {
-      const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/salary`, formData);
+      const res = await axios.post(`${process.env.REACT_APP_API_URL}api/salary`, formData);
       showSuccessAlert(res.data.msg);
       setTimeout(() => navigate("/showSalaries"), 4000);
     } catch (error) {

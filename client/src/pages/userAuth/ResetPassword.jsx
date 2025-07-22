@@ -64,7 +64,7 @@
 //     }
 //     try {
 //       const response = await axios.post(
-//         `${process.env.REACT_APP_API_URL}/api/employee/resetpassword`,
+//         `${process.env.REACT_APP_API_URL}api/employee/resetpassword`,
 //         formData
 //       ); // Adjusted endpoint
 //       showSuccessAlert(response.data.msg);
@@ -247,7 +247,7 @@ const ResetPassword = () => {
     };
 
     try {
-      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/employee/resetpassword`, formData);
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}api/employee/resetpassword`, formData);
       showSuccessAlert(response.data.msg);
       setTimeout(() => navigate("/login"), 2000);
     } catch (error) {

@@ -82,7 +82,7 @@ const AddLeaveType = () => {
                 leaveTypeName,
                 allowedLeaves,
             }
-            const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/leaveType`, formData);
+            const response = await axios.post(`${process.env.REACT_APP_API_URL}api/leaveType`, formData);
             showSuccessAlert(response.data.msg);
             console.log(response)
             setTimeout(() => {

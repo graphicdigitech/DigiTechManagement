@@ -66,7 +66,7 @@ const LeaveHistory = () => {
       setLoading(true);
       try {
         const response = await axios.get(
-          `${process.env.REACT_APP_API_URL}/api/leave/${employeeId}`
+          `${process.env.REACT_APP_API_URL}api/leave/${employeeId}`
         );
         setLeaveData(response.data);
         setLeaveRecords(response.data);

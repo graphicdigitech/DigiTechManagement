@@ -51,7 +51,7 @@ const Login = () => {
   //     };
 
   //     try {
-  //         const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/employee/login`, formData);
+  //         const response = await axios.post(`${process.env.REACT_APP_API_URL}api/employee/login`, formData);
   //         showSuccessAlert(response.data.msg);
   //         const userToken = response.data.token;
   //         const decodedToken = jwtDecode(userToken);
@@ -98,7 +98,7 @@ const Login = () => {
     };
 
     try {
-      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/employee/login`, formData);
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}api/employee/login`, formData);
       showSuccessAlert(response.data.msg);
       const userToken = response.data.token;
       const decodedToken = jwtDecode(userToken);

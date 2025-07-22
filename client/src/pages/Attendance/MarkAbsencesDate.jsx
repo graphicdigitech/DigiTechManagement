@@ -12,7 +12,7 @@ const MarkAbsencesDate = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/markAbsences`, { date });
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}api/markAbsences`, { date });
       Swal.fire("Success", response.data.msg, "success");
     } catch (error) {
       Swal.fire("Error", error.response.data.err, "error");

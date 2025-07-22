@@ -65,7 +65,7 @@ const UpdateRole = () => {
     useEffect(() => {
         const fetchRole = async () => {
             try {
-                const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/role/${id}`);
+                const res = await axios.get(`${process.env.REACT_APP_API_URL}api/role/${id}`);
                 setRoleName(res.data.roleName);
                 setRoleStatus(res.data.roleStatus);
             } catch (error) {
@@ -97,7 +97,7 @@ const UpdateRole = () => {
                 roleName,
                 roleStatus
             };
-            const res = await axios.put(`${process.env.REACT_APP_API_URL}/api/role/${id}`, formData);
+            const res = await axios.put(`${process.env.REACT_APP_API_URL}api/role/${id}`, formData);
             showSuccessAlert(res.data.msg);
             setTimeout(() => {
                 navigate("/showrole");

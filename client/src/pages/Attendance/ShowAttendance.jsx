@@ -57,7 +57,7 @@ const ShowAttendance = () => {
   useEffect(() => {
     const fetchAttendanceData = async () => {
       try {
-        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/attendance`);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}api/attendance`);
         setAttendanceData(response.data);
         setFilteredRecords(response.data); // Initially, all records are shown
       } catch (error) {
@@ -122,7 +122,7 @@ const ShowAttendance = () => {
     try {
       if (!Id) return;
       const response = await axios.get(
-        `${process.env.REACT_APP_API_URL}/api/attendance/report/${Id}/${selectedMonth}`
+        `${process.env.REACT_APP_API_URL}api/attendance/report/${Id}/${selectedMonth}`
       );
       setAttendanceReport(response.data);
     } catch (error) {

@@ -40,7 +40,7 @@ const ShowLeaveType = () => {
   useEffect(() => {
     const fetchLeaves = async () => {
       try {
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/leaveType`);
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}api/leaveType`);
         console.log(res.data);
         setLeaveTypeData(res.data);
         setFilteredData(res.data);
@@ -120,7 +120,7 @@ const ShowLeaveType = () => {
 
   const handleStatusUpdate = async (id, newStatus) => {
     try {
-      await axios.put(`${process.env.REACT_APP_API_URL}/api/leave/${id}`, { status: newStatus });
+      await axios.put(`${process.env.REACT_APP_API_URL}api/leave/${id}`, { status: newStatus });
       setLeaveTypeData((prev) =>
         prev.map((leave) =>
           leave._id === id ? { ...leave, status: newStatus } : leave
@@ -156,7 +156,7 @@ const ShowLeaveType = () => {
     }).then(async (result) => {
       if (result.isConfirmed) {
         try {
-          const response = await axios.delete(`${process.env.REACT_APP_API_URL}/api/leaveType/${leaveTypeid}`);
+          const response = await axios.delete(`${process.env.REACT_APP_API_URL}api/leaveType/${leaveTypeid}`);
           setLeaveTypeData(
             leaveTypeData.filter((leaveType) => leaveType._id !== leaveTypeid)
           );

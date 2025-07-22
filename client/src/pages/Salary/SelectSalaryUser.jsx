@@ -51,7 +51,7 @@ const SalaryUser = () => {
   useEffect(() => {
     const fetchEmployees = async () => {
       try {
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/employee`);
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}api/employee`);
         setEmployeeData(res.data);
         setFilteredData(res.data); // Initialize filtered data with all employees
       } catch (error) {

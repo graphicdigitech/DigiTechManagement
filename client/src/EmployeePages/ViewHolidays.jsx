@@ -56,7 +56,7 @@ const ViewHolidays = () => {
     const fetchHolidayData = async () => {
       setLoading(true);
       try {
-        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/holiday`);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}api/holiday`);
         setHolidayData(response.data);
         setFilteredRecords(response.data);
       } catch (error) {

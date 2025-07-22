@@ -50,7 +50,7 @@ const ShowSalary = () => {
   useEffect(() => {
     const fetchSalary = async () => {
       try {
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/salary`);
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}api/salary`);
         setsalaryData(res.data);
         console.log("this is res.data",res.data)
       } catch (error) {

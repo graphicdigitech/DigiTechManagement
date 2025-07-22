@@ -65,7 +65,7 @@ const UpdateLeaveType = () => {
   useEffect(() => {
     const fetchLeaveType = async () => {
       try {
-        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/leaveType/${id}`);
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}api/leaveType/${id}`);
         setLeaveTypeData(response.data);
         setleaveTypeName(response.data.leaveTypeName);
         setallowedLeaves(response.data.allowedLeaves);
@@ -100,7 +100,7 @@ const UpdateLeaveType = () => {
         allowedLeaves,
         leaveTypeStatus,
       };
-      const response = await axios.put(`${process.env.REACT_APP_API_URL}/api/leaveType/${id}`, formData);
+      const response = await axios.put(`${process.env.REACT_APP_API_URL}api/leaveType/${id}`, formData);
       showSuccessAlert(response.data.msg);
       console.log(response);
       setTimeout(() => {

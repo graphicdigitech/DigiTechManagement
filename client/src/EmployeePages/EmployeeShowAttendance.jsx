@@ -65,7 +65,7 @@ const EmployeeShowAttendance = () => {
       setLoading(true);
       try {
         const response = await axios.get(
-          `${process.env.REACT_APP_API_URL}/api/attendance/${id}`
+          `${process.env.REACT_APP_API_URL}api/attendance/${id}`
         );
         setAttendanceData(response.data);
         setAttendanceRecords(response.data); // Set both for immediate render
@@ -110,7 +110,7 @@ const EmployeeShowAttendance = () => {
     setLoading(true);
     try {
       const response = await axios.get(
-        `${process.env.REACT_APP_API_URL}/api/attendance/report/${id}/${selectedMonth}`
+        `${process.env.REACT_APP_API_URL}api/attendance/report/${id}/${selectedMonth}`
       );
       setAttendanceReport(response.data);
     } catch (error) {

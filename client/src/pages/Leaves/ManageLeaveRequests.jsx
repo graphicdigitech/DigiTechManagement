@@ -44,7 +44,7 @@
 //   useEffect(() => {
 //     const fetchLeaves = async () => {
 //       try {
-//         const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/leave`);
+//         const res = await axios.get(`${process.env.REACT_APP_API_URL}api/leave`);
 //         setLeaveData(res.data);
 //         setFilteredData(res.data);
 //       } catch (error) {
@@ -113,7 +113,7 @@
 //                     setIsSubmitting(true);
     
 //     try {
-//       await axios.put(`${process.env.REACT_APP_API_URL}/api/leave/${id}`, {
+//       await axios.put(`${process.env.REACT_APP_API_URL}api/leave/${id}`, {
 //         status: newStatus,
 //         approvedBy: employeeId,
 //       });
@@ -479,7 +479,7 @@ const ManageLeaveRequests = () => {
   useEffect(() => {
     const fetchLeaves = async () => {
       try {
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/leave`);
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}api/leave`);
         setLeaveData(res.data);
         setFilteredData(res.data);
       } catch (error) {
@@ -551,7 +551,7 @@ const ManageLeaveRequests = () => {
     }));
 
     try {
-      await axios.put(`${process.env.REACT_APP_API_URL}/api/leave/${id}`, {
+      await axios.put(`${process.env.REACT_APP_API_URL}api/leave/${id}`, {
         status: newStatus,
         approvedBy: employeeId,
       });

@@ -62,7 +62,7 @@
 //         };
 
 //         try {
-//             const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/employee/forgotpassword`, formData);
+//             const response = await axios.post(`${process.env.REACT_APP_API_URL}api/employee/forgotpassword`, formData);
 //             // successNotify(response.data.msg);
 //             showSuccessAlert(response.data.msg);
 
@@ -221,7 +221,7 @@ const ForgotPassword = () => {
         setIsSubmitting(true);
 
         try {
-            const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/employee/forgotpassword`, {
+            const response = await axios.post(`${process.env.REACT_APP_API_URL}api/employee/forgotpassword`, {
                 employeeEmail: employeeEmail.toLowerCase()
             });
             

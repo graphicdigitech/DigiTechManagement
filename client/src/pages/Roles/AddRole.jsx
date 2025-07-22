@@ -81,7 +81,7 @@ const AddRole = () => {
             const formData = {
                 roleName
             }
-            const response = await axios.post(`${process.env.REACT_APP_API_URL}/api/role`, formData);
+            const response = await axios.post(`${process.env.REACT_APP_API_URL}api/role`, formData);
             showSuccessAlert(response.data.msg);
             console.log(response)
             setTimeout(() => {
