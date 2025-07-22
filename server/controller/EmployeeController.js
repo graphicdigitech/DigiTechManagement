@@ -381,7 +381,7 @@ const createEmployee = async (req, res) => {
             <tr>
                 <td style="background-color: #003366; padding: 20px 0; text-align: center;">
                     <!-- Company Logo -->
-                    <img src="/images/logo-big.png" alt="Company Logo" style="height: auto; max-width: 150px;"> 
+                    <img src="https://digi-tech-management.vercel.app/images/logo-big.png" alt="Company Logo" style="height: auto; max-width: 150px;"> 
                 </td>
             </tr>
             <tr>
