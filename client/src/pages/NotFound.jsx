@@ -51,15 +51,15 @@ const NotFound = () => {
                                     </div>
                                 </form>
                                 <div class="text-center">
-                                    <p style={{color:"black"}}>Copyright © Designed by <a style={{color:"white"}} href="https://primevertexsoftwares.com/" target='_blank'>Prime Vertex</a></p>
+                                    <p style={{color:"black"}}>Copyright © Designed by <a style={{color:"white"}} href="https://www.instagram.com/shaloom._.james/" target='_blank'>Shaloom James</a></p>
                                     <ul class="list-inline">
-                                        <li class="list-inline-item"><a href="https://www.facebook.com/people/Prime-Vertex-Software/61566268876292/" target='_blank' class="btn btn-facebook"><i class="fa fa-facebook"></i></a>
+                                        <li class="list-inline-item"><a href="" target='_blank' class="btn btn-facebook"><i class="fa fa-facebook"></i></a>
                                         </li>
-                                        <li class="list-inline-item"><a href="https://www.instagram.com/primevertex_softwares/"  target='_blank' class="btn btn-instagram"><i class="fa-brands fa-instagram"></i></a>
+                                        <li class="list-inline-item"><a href=""  target='_blank' class="btn btn-instagram"><i class="fa-brands fa-instagram"></i></a>
                                         </li>
-                                        <li class="list-inline-item"><a href="https://www.linkedin.com/company/primevertexsoftwares/" target='_blank' class="btn btn-linkedin"><i class="fa fa-linkedin"></i></a>
+                                        <li class="list-inline-item"><a href="" target='_blank' class="btn btn-linkedin"><i class="fa fa-linkedin"></i></a>
                                         </li>
-                                        <li class="list-inline-item"><a href="https://www.behance.net/primevertex" target='_blank' class="btn btn-twitter"><i class="fa-brands fa-behance"></i></a>
+                                        <li class="list-inline-item"><a href="" target='_blank' class="btn btn-twitter"><i class="fa-brands fa-behance"></i></a>
                                         </li>
                                     </ul>
                                 </div>

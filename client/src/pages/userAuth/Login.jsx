@@ -164,15 +164,15 @@ const Login = () => {
                   style={{ backgroundColor: "rgb(255 255 255 / 35%)" }}
                 >
                   <div className="card-body pt-5">
-                    <a className="text-center">
-                      {/* <h4>Prime Vertex</h4> */}
-                      <h4>
-                        <img
-                          src="/images/logo-big.png"
-                          alt=""
-                        />
-                      </h4>
-                    </a>
+                       <div className="text-center">
+                                        <h4>
+                                            <img src="/images/logo-big.png" 
+                                                width="270px" 
+                                                alt="Company Logo" />
+                                        </h4>
+                                    </div>
+                                    
+                    {/* </a> */}
                     <form
                       className="mt-5 mb-5 login-input"
                       onSubmit={handleSubmit}
